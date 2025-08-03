@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ReverseTheString",
+            "request": "launch",
+            "mainClass": "ReverseTheString",
+            "projectName": "Java_ada05f33"
+        },
+        {
+            "type": "java",
+            "name": "prin",
+            "request": "launch",
+            "mainClass": "prin",
+            "projectName": "Java_ada05f33"
+        },
+        {
+            "type": "java",
+            "name": "calculateFactorial",
+            "request": "launch",
+            "mainClass": "calculateFactorial",
+            "projectName": "Java_ada05f33"
+        },
+        {
+            "type": "java",
+            "name": "bubbleSort",
+            "request": "launch",
+            "mainClass": "bubbleSort",
+            "projectName": "Java_ada05f33"
+        },
+        {
+            "type": "java",
             "name": "bitManipulation",
             "request": "launch",
             "mainClass": "bitManipulation",

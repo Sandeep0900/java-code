@@ -8,7 +8,7 @@ public class bitManipulation {
         int a = 1<<i;
         
         int num = a | n;
-        System.out.println(~9);
+        System.out.println(num);
     }
     
 }
