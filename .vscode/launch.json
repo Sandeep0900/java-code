@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "backTracking",
+            "request": "launch",
+            "mainClass": "backTracking",
+            "projectName": "Java_ada05f33"
+        },
+        {
+            "type": "java",
             "name": "ReverseTheString",
             "request": "launch",
             "mainClass": "ReverseTheString",
