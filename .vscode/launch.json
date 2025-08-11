@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "OOPS",
+            "request": "launch",
+            "mainClass": "OOPS",
+            "projectName": "Java_ada05f33"
+        },
+        {
+            "type": "java",
             "name": "backTracking",
             "request": "launch",
             "mainClass": "backTracking",
