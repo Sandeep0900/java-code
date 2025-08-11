@@ -11,7 +11,7 @@ public class backTracking {
         }
     }
     public static void main(String[] arr) {
-        String a = "ABC";
+        String a = "ABD";
         arreng_the_words(a,"");
     }
    
