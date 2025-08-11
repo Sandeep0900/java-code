@@ -1,4 +1,4 @@
-class pen {
+class Pen {
     String p;
 
     public void printTheValue() {
@@ -10,8 +10,8 @@ class pen {
 
 public class OOPS {
     public static void main(String[] arr) {
-        pen p1 = new pen();
-        pen p2 = new pen();
+        Pen p1 = new Pen();
+        Pen p2 = new Pen();
 
         p1.p = "Sandeep";
         p2.p = "Sharma";
