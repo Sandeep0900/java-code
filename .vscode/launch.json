@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "arrayLinst1",
+            "request": "launch",
+            "mainClass": "arrayLinst1",
+            "projectName": "Java_ada05f33"
+        },
+        {
+            "type": "java",
             "name": "OOPS",
             "request": "launch",
             "mainClass": "OOPS",
