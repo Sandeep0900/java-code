@@ -1,111 +1,137 @@
-public class LinkList {
-    Node head = null;
-    private int size;
-    LinkList() {
-        this.size = 0;
-    }
+// public class LinkList {
+//     Node head = null;
+//     private int size;
+//     LinkList() {
+//         this.size = 0;
+//     }
 
 
-    class Node{
-        String data;
-        Node next;
+//     class Node{
+//         String data;
+//         Node next;
 
-        Node(String data) {
-            this.data = data;
-            this.next = null;
-            size++;
-        }
-    }
+//         Node(String data) {
+//             this.data = data;
+//             this.next = null;
+//             size++;
+//         }
+//     }
 
-    // add - first
-    public void addFirst(String data) {
-        Node newNode = new Node(data);
-        if(head == null) {
-            head = newNode;
-            return;
-        }
-        newNode.next = head;
-        head = newNode;
-    }
+//     // add - first
+//     public void addFirst(String data) {
+//         Node newNode = new Node(data);
+//         if(head == null) {
+//             head = newNode;
+//             return;
+//         }
+//         newNode.next = head;
+//         head = newNode;
+//     }
 
-    // add to last
-    public void addToLast(String data) {
-         Node newNode = new Node(data);
-        if(head == null) {
-            head = newNode;
-            return;
-        }
+//     // add to last
+//     public void addToLast(String data) {
+//          Node newNode = new Node(data);
+//         if(head == null) {
+//             head = newNode;
+//             return;
+//         }
 
-        Node currNode = head;
-        while(currNode.next != null) {
-            currNode = currNode.next;
-        }
+//         Node currNode = head;
+//         while(currNode.next != null) {
+//             currNode = currNode.next;
+//         }
 
-        currNode.next = newNode;
-    }
+//         currNode.next = newNode;
+//     }
 
-    public void pringList() {
-        if(head == null) {
-            System.out.println("list is empty");
-            return;
-        }
-        Node newHeader = head;
-        while(newHeader != null) {
-            System.out.print(newHeader.data +"->");
-            newHeader = newHeader.next;
-        }
-        System.out.print("NULL");
-    }
-    // delething the element from link list
-    public void deleteingTheElementFromStart() {
-        if(head == null) {
-            System.out.println("the list is empty");
-            return;
-        }
-        size--;
-        head = head.next;
-    }
-     public void deleteingTheElementFromLast() {
-        if(head == null) {
-            System.out.println("the list is empty last");
-            return;
-        }
-        Node temp = head;
-        size--;
-        if(temp.next == null) {
-            head = null;
-            return;
-        }
-        while (temp.next.next != null) {
-            temp = temp.next;
-        }
-        temp.next = null;   
-    }
+//     public void pringList() {
+//         if(head == null) {
+//             System.out.println("list is empty");
+//             return;
+//         }
+//         Node newHeader = head;
+//         while(newHeader != null) {
+//             System.out.print(newHeader.data +"->");
+//             newHeader = newHeader.next;
+//         }
+//         System.out.print("NULL");
+//     }
+//     // delething the element from link list
+//     public void deleteingTheElementFromStart() {
+//         if(head == null) {
+//             System.out.println("the list is empty");
+//             return;
+//         }
+//         size--;
+//         head = head.next;
+//     }
+//      public void deleteingTheElementFromLast() {
+//         if(head == null) {
+//             System.out.println("the list is empty last");
+//             return;
+//         }
+//         Node temp = head;
+//         size--;
+//         if(temp.next == null) {
+//             head = null;
+//             return;
+//         }
+//         while (temp.next.next != null) {
+//             temp = temp.next;
+//         }
+//         temp.next = null;   
+//     }
 
-    public int getSize() {
-        return size;
-    }
+//     public int getSize() {
+//         return size;
+//     }
 
+//     public static void main(String[] arr) {
+//         LinkList list = new LinkList();
+//         list.addFirst("a");
+//         list.addFirst("is");
+//         list.addFirst("this");
+//         list.addToLast("List");
+//         // list.deleteingTheElementFromStart();
+//         // list.deleteingTheElementFromLast();
+//         // list.deleteingTheElementFromStart();
+//         // list.deleteingTheElementFromStart();
+//         list.deleteingTheElementFromLast();
+//         list.addToLast("List");
+//         list.addToLast("List");
+//         list.addToLast("List");
+//         list.addToLast("List");
+//         list.addToLast("List");
+//         list.addToLast("List");
+//         list.pringList();
+//         // System.out.println();
+//         System.out.println("\n" + list.getSize());
+        
+//     }
+// }
+
+import java.util.*;
+
+public class LinkList{
     public static void main(String[] arr) {
-        LinkList list = new LinkList();
+        LinkedList<String> list = new LinkedList<>();
         list.addFirst("a");
         list.addFirst("is");
         list.addFirst("this");
-        list.addToLast("List");
-        // list.deleteingTheElementFromStart();
-        // list.deleteingTheElementFromLast();
-        // list.deleteingTheElementFromStart();
-        // list.deleteingTheElementFromStart();
-        list.deleteingTheElementFromLast();
-        list.addToLast("List");
-        list.addToLast("List");
-        list.addToLast("List");
-        list.addToLast("List");
-        list.addToLast("List");
-        list.addToLast("List");
-        list.pringList();
-        // System.out.println();
-        System.out.println("\n" + list.getSize());
-        
+        list.add("List");
+        System.out.println(list);
+        System.out.println(list.size());
+
+        for(int i=0; i<list.size(); i++) {
+            System.out.print(list.get(i) +"->");
+            // list.set(i,"sandeep");
+        }
+        System.out.println();
+        System.out.println(list);
+        // list.removeFirst();
+        // list.removeLast();
+        list.remove(1);
+        System.out.println(list);
+        System.out.println(list.size());
     }
 }
