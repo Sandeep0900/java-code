@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Hashing",
+            "request": "launch",
+            "mainClass": "Hashing",
+            "projectName": "Java_ada05f33"
+        },
+        {
+            "type": "java",
+            "name": "HashSetCode",
+            "request": "launch",
+            "mainClass": "HashSetCode",
+            "projectName": "Java_ada05f33"
+        },
+        {
+            "type": "java",
             "name": "BinarySearchTree",
             "request": "launch",
             "mainClass": "BinarySearchTree",
