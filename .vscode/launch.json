@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "majorityHashMap",
+            "request": "launch",
+            "mainClass": "majorityHashMap",
+            "projectName": "Java_ada05f33"
+        },
+        {
+            "type": "java",
             "name": "Hashing",
             "request": "launch",
             "mainClass": "Hashing",
